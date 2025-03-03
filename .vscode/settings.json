@@ -15,5 +15,12 @@
   "prettier.enable": false,
   "typescript.tsdk": "node_modules/typescript/lib",
   "unocss.root": ["./"],
-  "vue.server.hybridMode": true
+  "vue.server.hybridMode": true,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+        "package.json": "package-lock.json, pnpm*, .editorconfig,.gitattributes,.gitignore,.npmrc,tsconfig.json,.eslint*,.prettier*",
+        ".env": ".env*",
+        "vite.config.ts": "*.config.ts,*.config.js",
+        "README.md": "README*,LICENSE,CHANGELOG*,vercel.json"
+  }
 }
